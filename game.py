@@ -35,9 +35,7 @@ class platform(pygame.sprite.Sprite):
         super().__init__()
         self.surf = pygame.Surface((random.randint(50,100),12))
         self.surf.fill((0,255,0))
-        #self.rect = self.surf.get_rect(center = (WIDTH/2, HEIGHT - 10))
-        # add this later
-        self.rect = self.surf.get_rect(center = (random.randint(0,WIDTH-10),random.randint(0,HEIGHT-30)))
+        self.rect = self.surf.get_rect(center = (WIDTH/2, HEIGHT - 10))
     
     def move(self):
         pass
