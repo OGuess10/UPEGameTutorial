@@ -88,7 +88,7 @@ def check(platform, groupies):
         for entity in groupies:
             if entity == platform:
                 continue
-            if (abs(platform.rect.top - entity.rect.bottom) < 40) and (abs(platform.rect.bottom - entity.rect.top) < 40):
+            if (abs(platform.rect.top - entity.rect.bottom) < 50) and (abs(platform.rect.bottom - entity.rect.top) < 50):
                 return True
         C = False
 
